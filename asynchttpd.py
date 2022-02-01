@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import asyncio
+#import asyncio
 import uvicorn
 from fastapi import FastAPI
 
@@ -10,8 +10,9 @@ app = FastAPI()
 def path_root():
     return {"msg": "Hello, world!"}
 
-def web_server():
-    uvicorn.run(app)
+#async def web_server():
+#    uvicorn.run(app)
 
 if __name__ == "__main__":
-    asyncio.run(web_server())
+    #asyncio.run(web_server())
+    uvicorn.run(app)
